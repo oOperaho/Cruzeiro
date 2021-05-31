@@ -27,10 +27,7 @@ async def on_message(msg):
 
 @client.event
 async def on_member_join(member):
-    c = 592
     await member.send(f"Bem-vindo(a) ao servidor da Cruzeiro do sul, {member.name}!")
-    c += 1
-    print(f"{member.name} has joined, the server has {c} members now.")
 
 
 @client.event
@@ -38,4 +35,4 @@ async def on_member_remove(member):
     print(f"{member.name} left the server.")
 
 
-client.run('')
+client.run('NzYzODk1MDg3MTkyNzM1NzQ0.X3-WvQ.RF9dZpiZUsa8qLb7zDFZiUw0DmY')
