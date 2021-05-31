@@ -27,6 +27,7 @@ async def on_message(msg):
 
 @client.event
 async def on_member_join(member):
+    print(f"{member.name} has joined the server.")
     await member.send(f"Bem-vindo(a) ao servidor da Cruzeiro do sul, {member.name}!")
 
 
@@ -35,4 +36,4 @@ async def on_member_remove(member):
     print(f"{member.name} left the server.")
 
 
-client.run('NzYzODk1MDg3MTkyNzM1NzQ0.X3-WvQ.RF9dZpiZUsa8qLb7zDFZiUw0DmY')
+client.run('lmao token')
