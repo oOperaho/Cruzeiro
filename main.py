@@ -38,4 +38,4 @@ async def on_member_remove(member):
     print(f"{member.name} left the server.")
 
 
-client.run('token')
+client.run('lmao token')
