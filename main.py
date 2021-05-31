@@ -33,4 +33,9 @@ async def on_member_join(member):
     print(f"{member.name} has joined, the server has {c} members now.")
 
 
-client.run('token')
+@client.event
+async def on_member_remove(member):
+    print(f"{member.name} left the server.")
+
+
+client.run('')
