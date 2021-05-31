@@ -12,6 +12,7 @@ async def on_ready():
     print(f"Logged as → {client.user};")
     actv = discord.Game("CSUL")
     await client.change_presence(status=discord.Status.do_not_disturb, activity=actv)
+    print("Ready;")
 
 
 @client.event
