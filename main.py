@@ -18,10 +18,12 @@ async def on_ready():
 async def on_message(msg):
     if msg.author == client.user:
         return
-    elif msg.content == ".lat":
+    if msg.content == ".lat":
         pong = client.latency
         await msg.channel.send(f"{msg.author.mention} {pong:1f}")
-    elif msg.content.startswith("cruzeiro"):
+    if "cruzeiro" in msg.content or "Cruzeiro" in msg.content:
+        await msg.channel.send(emoji.emojize(":eye:"))
+    if client.user in msg.content:
         await msg.channel.send(emoji.emojize(":eye:"))
 
 
