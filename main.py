@@ -1,10 +1,12 @@
 import discord
+from discord.ext import commands
 import emoji
 
 intents = discord.Intents.default()
 intents.members = True
 intents.presences = True
 client = discord.Client(intents=intents)
+client0 = commands.Bot(command_prefix=".")
 
 
 @client.event
@@ -12,16 +14,17 @@ async def on_ready():
     print(f"Logged as → {client.user};")
     actv = discord.Game("CSUL")
     await client.change_presence(status=discord.Status.do_not_disturb, activity=actv)
-    print("Ready;")
+    print(f"Ready;")
 
 
 @client.event
 async def on_message(msg):
+    msg.content.lower()
     if msg.author == client.user:
         return
-    if msg.content == ".lat":
+    if msg.content == "ping":
         pong = client.latency
-        await msg.channel.send(f"{msg.author.mention} {pong:1f}")
+        await msg.channel.send(f"{msg.author.mention} {round(pong*1000)}ms")
     if "cruzeiro" in msg.content or "Cruzeiro" in msg.content:
         await msg.channel.send(emoji.emojize(":eye:"))
     if client.user in msg.content:
