@@ -3,13 +3,16 @@
 This is the same old bot for the Discord Server of CSUL, but i've changed the code. It's better now.
 
 [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
+[Heroku](https://devcenter.heroku.com/categories/python-support)
 
 # How i did
 
 The bot is now running on Heroku servers, using only free features. There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
-I'll list some things i miss on the first attempt to host this bot. 
+I'll list some things i almost miss while read the documentations, on the first attempt to host this bot.
 
-#### → 
+#### → Create Python reference -
+
+  * Heroku won't able the packages if they don't be referred. I used **heroku buildpacks:set heroku/python** to set the python package.
 
 #### → Setting Procfile and requirements -
 
