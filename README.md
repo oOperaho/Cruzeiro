@@ -1,11 +1,11 @@
-# Cruzeiro
+<h1 allign="center"> Cruzeiro </h1>
 
 This is the same old bot for the Discord Server of CSUL, but i've changed the code. It's better now.
 
 [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)\
 [Heroku](https://devcenter.heroku.com/categories/python-support)
 
-# How i did
+<h2 allign="center"> How i did </h2>
 
 The bot is now running on Heroku servers, using only free features. There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
 I'll list some things i almost miss while read the documentations, on the first attempt to host this bot.
