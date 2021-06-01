@@ -12,7 +12,8 @@ I'll list some things i almost miss while read the documentations, on the first 
 
 ### → Create Python reference -
 
-  * Heroku won't able the packages if they don't be referred. I used **heroku buildpacks:set heroku/python** to set the python package.
+  * Heroku won't able the buildpacks if they don't be referred. I used **heroku buildpacks:set heroku/python** to set it.
+  * This can be configurated at the **heroku create** command, creating the app and setting the buildpack inside.
 
 ### → Setting Procfile and requirements -
 
@@ -22,7 +23,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   
   ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
-  * The _requirements.txt_ has to contain all the packages/versions that are being used on the application. I also forgot to put a "discord=" line to invoke the
+  * The _requirements.txt_ has to contain all the packages/versions that are being used on the application. I also forgot to put a "discord==1.0.1" line to invoke the
   main discord package.
   * On Heroku CLI, i had to make a **heroku ps:scale web=1 worker=1** after update the Procfile. This line sets the amount of dynos that will be used. Also, i had
   to enable the options of web and worker (after commit) on Heroku dashboard resources page.
