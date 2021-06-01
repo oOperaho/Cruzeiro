@@ -28,7 +28,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   * On Heroku CLI, i had to make a **heroku ps:scale web=1 worker=1** after update the Procfile. This line sets the amount of dynos that will be used. Also, i had
   to enable the options of web and worker (after commit) on Heroku dashboard resources page.
   
-  ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120257737-213d0800-c267-11eb-8128-563b8fc83ccf.png)
+  ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
 ### → Change branches and deploy - 
  
