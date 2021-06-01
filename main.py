@@ -6,6 +6,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.presences = True
 client = discord.Client(intents=intents)
+client0 = commands.Bot(command_prefix=".")
 
 
 
