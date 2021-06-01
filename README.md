@@ -43,3 +43,6 @@ I'll list some things i almost miss while read the documentations, on the first 
   
 I'll update every change or issue on the application, this readme just tells the things i did to solve some problems. If there's something that can be changed or 
 solved in a better way, i can edit the readme anytime, so it can be helpful to others.  
+
+<details id="portuguese">
+ <summary>Texto em Português</summary>
