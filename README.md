@@ -41,5 +41,5 @@ I'll list some things i almost miss while read the documentations, on the first 
  
   ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
-I'll update every change or issues on the application, this readme just tells the things i did to solve some problems. If there's something that can be changed or 
+I'll update every change or issue on the application, this readme just tells the things i did to solve some problems. If there's something that can be changed or 
 solved in a better way, i can edit the readme anytime, so it can be helpful to others.  
