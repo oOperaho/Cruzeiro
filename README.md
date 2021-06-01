@@ -32,17 +32,12 @@ I'll list some things i almost miss while read the documentations, on the first 
 
 ### → Change branches and deploy -
  
- * Yes, i was in the remote branch master, which was used to be the default branch for Heroku. However, i had to change it to the **main** branch, using the
- command line **git checkout main**. After doing this, the code was able to actually being pushed.
- * The code i edit is on master branch (Github), i just change to main everytime i need to push it to Heroku. So, the first time i deployed, the bot was 
- pinging each 30 seconds. I've added the **worker** dyno, edited some lines of the code and pushed it. The bot is on, working fine.
+  * Yes, i was in the remote branch master, which was used to be the default branch for Heroku. However, i had to change it to the **main** branch, using the
+  command line **git checkout main**. After doing this, the code was able to actually being pushed.
+  * The code i edit is on master branch (Github), i just change to main everytime i need to push it to Heroku. So, the first time i deployed, the bot was 
+  pinging each 30 seconds. I've added the **worker** dyno, edited some lines of the code and pushed it. The bot is on, working fine.
  
- ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
-
-
-
-
-
-
-
+  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
+I'll update every change or issues on the application, this readme just tells the things i did to solve some problems. If there's something that can be changed or 
+solved in a better way, i can edit it anytime, so it can be helpful to others.  
