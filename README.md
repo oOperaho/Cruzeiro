@@ -89,7 +89,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
  
   ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
-Eu vou atualizar toda mudança ou problema da aplicação, esse readme apenas conta os métodos que eu usei pra resolver alguns problemas. Se tem algo que pode ser mudado
+Eu vou atualizar toda mudança ou problema da aplicação, esse readme só conta os métodos que eu usei pra resolver alguns problemas. Se tem algo que pode ser mudado
 ou resolvido de uma maneira melhor, eu posso editar esse texto a qualquer hora, para ser útil para outras pessoas.
 
 </details>
