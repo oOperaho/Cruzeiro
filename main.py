@@ -27,8 +27,6 @@ async def on_message(msg):
         await msg.channel.send(f"{msg.author.mention} {round(pong*1000)}ms")
     if "cruzeiro" in msg.content or "Cruzeiro" in msg.content:
         await msg.channel.send(emoji.emojize(":eye:"))
-    if client.user in msg.content:
-        await msg.channel.send(emoji.emojize(":eye:"))
 
 
 @client.event
