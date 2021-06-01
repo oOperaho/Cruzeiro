@@ -35,7 +35,9 @@ I'll list some things i almost miss while read the documentations, on the first 
   * Yes, i was in the remote branch master, which was used to be the default branch for Heroku. However, i had to change it to the **main** branch, using the
   command line **git checkout main**. After doing this, the code was able to actually being pushed.
   * The code i edit is on master branch (Github), i just change to main everytime i need to push it to Heroku. So, the first time i deployed, the bot was 
-  pinging each 30 seconds. I've added the **worker** dyno, edited some lines of the code and pushed it. The bot is on, working fine.
+  pinging each 30 seconds, and logging twice. The problem here was the unnecessary use of __gunicorn__, which runs a new server online, so i just had to remove
+  the line reference **"web: gunicorn main:app"** of the Procfile, replacing by the **python main.py** that was mentioned before. I've added the **worker** dyno, 
+  edited some lines of the code and pushed it. The bot is on, working fine.
  
   ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
