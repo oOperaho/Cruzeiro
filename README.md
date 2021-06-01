@@ -60,7 +60,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
 
 ### → Criar referência do Python -
 
-  * Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei **heroku buildpacks:set heroku/python** pra setar isso.
+  * A Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei **heroku buildpacks:set heroku/python** pra setar isso.
   * Isso pode ser configurado no comando **heroku create**, criando o aplicativo com o buildpack junto.
 
 ### → Configurar Procfile e os requirements -
