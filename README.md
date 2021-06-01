@@ -67,7 +67,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
 
   * Esses dois arquivos precisam ser criados no mesmo diretório do arquivo *.py*. O _Procfile_ não pode ter extensão, e vai receber os dynos _web/worker_ pra conectar
   a aplicação com a Heroku.
-  * Eu instalei o _gunicorn_ pra usar os dynos, mas no final eu não precisei dele. Eu só passei o parâmetro **python** para rodá-los.
+  * Eu instalei o _gunicorn_ pra usar os dynos, mas no final eu não precisei dele. Só passei o parâmetro **python** para rodá-los.
   
   ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
