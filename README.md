@@ -1,4 +1,4 @@
-<h1 allign="center"> Cruzeiro </h1>
+<h1 allign="center">Cruzeiro</h1>
 
 This is the same old bot for the Discord Server of CSUL, but i've changed the code. It's better now.
 
