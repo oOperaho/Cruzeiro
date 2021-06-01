@@ -15,7 +15,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   * Heroku won't able the buildpacks if they don't be referred. I used **heroku buildpacks:set heroku/python** to set it.
   * This can be configurated at the **heroku create** command, creating the app and setting the buildpack inside.
 
-### → Setting Procfile and requirements -
+### → Set Procfile and requirements -
 
   * These two files must be created at the same directory as the *.py* script. The _Procfile_ can't have a extension, and will contain the _web/worker_ dynos to 
   actually connect the app to Heroku.
@@ -30,11 +30,19 @@ I'll list some things i almost miss while read the documentations, on the first 
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120257737-213d0800-c267-11eb-8128-563b8fc83ccf.png)
 
-  
- ### → Changing branches -
+### → Change branches and deploy -
  
  * Yes, i was in the remote branch master, which was used to be the default branch for Heroku. However, i had to change it to the **main** branch, using the
  command line **git checkout main**. After doing this, the code was able to actually being pushed.
- * The code i edit is on master branch (Github), i just change to main everytime i need to push it to Heroku.
+ * The code i edit is on master branch (Github), i just change to main everytime i need to push it to Heroku. So, the first time i deployed, the bot was 
+ pinging each 30 seconds. I've added the **worker** dyno, edited some lines of the code and pushed it. The bot is on, working fine.
+ 
+ ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+
+
+
+
+
+
 
   
