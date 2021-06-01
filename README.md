@@ -1,5 +1,9 @@
 # Cruzeiro
 
-This is the same old bot for the Discord Server of CSUL, but i've changed the code, now i'm using Python. 
+This is the same old bot for the Discord Server of CSUL, but i've changed the code. 
 
-The library is Discord.py → https://discordpy.readthedocs.io/en/stable/index.html
+[Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
+
+# How i did
+
+The bot is now running on Heroku servers, using only free features. 
