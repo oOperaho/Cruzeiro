@@ -22,7 +22,7 @@ async def on_message(msg):
     msg.content.lower()
     if msg.author == client.user:
         return
-    if msg.content == "ping":
+    if msg.content == ".ping":
         pong = client.latency
         await msg.channel.send(f"{msg.author.mention} {round(pong*1000)}ms")
     if "cruzeiro" in msg.content or "Cruzeiro" in msg.content:
