@@ -2,17 +2,8 @@ import discord
 from discord.ext import commands
 import emoji
 
-intents = discord.Intents.default()
-intents.members = True
-intents.presences = True
-client = discord.Client(intents=intents)
-client0 = commands.Bot(command_prefix=".")
 
-
-@client0.commands
-async def ping(ctx):
-    latency = client0.latency
-    ctx.send(f"{ctx.author.mention} ping is → {round(latency*1000)}ms")
+client = commands.Bot(command_prefix='.')
 
 
 @client.event
@@ -24,18 +15,6 @@ async def on_ready():
 
 
 @client.event
-async def on_message(msg):
-    msg.content.lower()
-    if msg.author == client.user:
-        return
-    if msg.content == ".ping" or msg.content == ".lat":
-        pong = client.latency
-        await msg.channel.send(f"{msg.author.mention} {round(pong*1000)}ms")
-    if "cruzeiro" in msg.content or "Cruzeiro" in msg.content:
-        await msg.channel.send(emoji.emojize(":eye:"))
-
-
-@client.event
 async def on_member_join(member):
     print(f"{member.name} has joined the server.")
     await member.send(f"Bem-vindo(a) ao servidor da Cruzeiro do sul, {member.name}!")
@@ -44,6 +23,17 @@ async def on_member_join(member):
 @client.event
 async def on_member_remove(member):
     print(f"{member.name} left the server.")
+
+
+@client.command()
+async def ping(ctx):
+    latency = client.latency
+    await ctx.send(f"Ping: {round(latency*1000)}ms")
+
+
+@client.event
+async def cruzeiro(ctx):
+    await ctx.send(emoji.emojize(":eye:"))
 
 
 client.run('lmao token')
