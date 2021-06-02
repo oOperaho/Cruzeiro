@@ -36,9 +36,11 @@ async def ping(ctx):
 
 @client.event
 async def on_message(ctx):
-    ctx.lower()
-    if ctx.content == "cruzeiro":
-        await ctx.send(emoji.emojize(":eye:"))
+    ctx.content.lower()
+    if ctx.author == client.user:
+        return
+    if "cruzeiro" in ctx.content:
+        await ctx.channel.send(emoji.emojize(":eye:"))
 
 
 client.run('lmao token')
