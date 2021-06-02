@@ -78,7 +78,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
-### → Mudar branches e fazer o deploy - 
+### → Trocar branches e fazer o deploy - 
  
   * Sim, eu estava no branch master, que era o branch padrão da Heroku. Entretanto, eu precisei mudar para o **main** branch com o comando **git checkout main**. 
   Depois de fazer isso, eu pude executar o git push.
