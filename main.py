@@ -9,6 +9,12 @@ client = discord.Client(intents=intents)
 client0 = commands.Bot(command_prefix=".")
 
 
+@client0.commands
+async def ping(ctx):
+    latency = client0.latency
+    ctx.send(f"{ctx.author.mention} ping is → {round(latency*1000)}ms")
+
+
 @client.event
 async def on_ready():
     print(f"Logged as → {client.user};")
