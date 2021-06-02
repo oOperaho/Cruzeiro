@@ -9,6 +9,7 @@ client = discord.Client(intents=intents)
 client0 = commands.Bot(command_prefix=".")
 
 
+
 @client.event
 async def on_ready():
     print(f"Logged as → {client.user};")
