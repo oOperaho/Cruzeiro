@@ -2,8 +2,11 @@ import discord
 from discord.ext import commands
 import emoji
 
-
-client = commands.Bot(command_prefix='.')
+intents = discord.Intents.default()
+intents.members = True
+intents.presences = True
+client = discord.Client(intents=intents)
+bot = commands.Bot(command_prefix='.')
 
 
 @client.event
@@ -25,15 +28,17 @@ async def on_member_remove(member):
     print(f"{member.name} left the server.")
 
 
-@client.command()
+@bot.command()
 async def ping(ctx):
     latency = client.latency
     await ctx.send(f"Ping: {round(latency*1000)}ms")
 
 
 @client.event
-async def cruzeiro(ctx):
-    await ctx.send(emoji.emojize(":eye:"))
+async def on_message(ctx):
+    ctx.lower()
+    if ctx.content == "cruzeiro":
+        await ctx.send(emoji.emojize(":eye:"))
 
 
 client.run('lmao token')
