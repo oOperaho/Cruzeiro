@@ -28,7 +28,7 @@ async def on_member_remove(member):
     print(f"{member.name} left the server.")
 
 
-@bot.command()
+@bot.commands()
 async def ping(ctx):
     latency = client.latency
     await ctx.send(f"Ping: {round(latency*1000)}ms")
