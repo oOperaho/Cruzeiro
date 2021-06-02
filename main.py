@@ -10,7 +10,7 @@ cruzeiro = commands.Bot(command_prefix='.', intents=intents)
 @cruzeiro.event
 async def on_ready():
     print(f"Logged as → {cruzeiro.user};")
-    actv = discord.Game("CSUL")
+    actv = discord.Game(".about")
     await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=actv)
 
 
@@ -40,6 +40,19 @@ async def on_message(ctx):
 @cruzeiro.command()
 async def ping(ctx):
     await ctx.send(f"Ping: {round(cruzeiro.latency*1000)}ms")
+
+
+@cruzeiro.command()
+async def about(ctx):
+    await ctx.send(f"Regras do servidor → "
+                   f"https://discord.com/channels/605585174209495060/797518209364000788/797526727806681089"
+                   f"\nColetar cargos → "
+                   f"https://discord.com/channels/605585174209495060/685884303057485849/744748856507498527")
+
+
+@cruzeiro.command()
+async def botcode(ctx):
+    await ctx.send(f"https://github.com/oOperaho/Cruzeiro")
 
 
 cruzeiro.run('lmao token')
