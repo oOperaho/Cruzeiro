@@ -58,12 +58,12 @@ Esse é o mesmo bot antigo, rodando no servidor do Discord da CSUL, mas eu mudei
 
 O bot está rodando agora nos servidores da Heroku, usando só recursos gratuitos. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
 
-### → Criar referência do Python -
+### → Criar referência do Python 
 
   * A Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei o **heroku buildpacks:set heroku/python** pra setar isso.
   * Isso pode ser configurado no comando **heroku create**, criando o aplicativo com o buildpack já inserido.
 
-### → Configurar Procfile e os requirements -
+### → Configurar Procfile e os requirements 
 
   * Esses dois arquivos precisam ser criados no mesmo diretório do arquivo *.py*. O _Procfile_ não pode ter extensão, e vai receber os dynos _web/worker_ pra conectar
   a aplicação com a Heroku.
@@ -78,7 +78,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
-### → Trocar branches e fazer o deploy - 
+### → Trocar branches e fazer o deploy  
  
   * Sim, eu estava no branch master, que era o branch padrão da Heroku. Entretanto, eu precisei mudar para o **main** branch com o comando **git checkout main**. 
   Depois de fazer isso, eu pude executar o git push.
