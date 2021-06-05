@@ -55,4 +55,4 @@ async def botcode(ctx):
     await ctx.send(f"https://github.com/oOperaho/Cruzeiro")
 
 
-cruzeiro.run('lmao token')
+cruzeiro.run('token')
