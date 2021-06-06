@@ -60,4 +60,4 @@ async def botcode(ctx):
 
 
 # Running bot
-cruzeiro.run('lmao token')
+cruzeiro.run('token')
