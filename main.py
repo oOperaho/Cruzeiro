@@ -1,3 +1,5 @@
+# Simple start
+
 import discord
 from discord.ext import commands
 import emoji
@@ -7,11 +9,12 @@ intents.members = True
 cruzeiro = commands.Bot(command_prefix='.', intents=intents)
 
 
+# Event Decorators -
 @cruzeiro.event
 async def on_ready():
-    print(f"Logged as → {cruzeiro.user};")
-    actv = discord.Game(".about")
-    await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=actv)
+    print(f"Logged as: {cruzeiro.user};")
+    stats = discord.Game(".about")
+    await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=stats)
 
 
 @cruzeiro.event
@@ -24,7 +27,7 @@ async def on_member_join(member):
 
 @cruzeiro.event
 async def on_member_remove(member):
-    print(f"{member.name} left the server.")
+    print(f"{member.name} just left the server.")
 
 
 @cruzeiro.event
@@ -37,6 +40,7 @@ async def on_message(ctx):
     await cruzeiro.process_commands(ctx)
 
 
+# Command Decorators -
 @cruzeiro.command()
 async def ping(ctx):
     await ctx.send(f"Ping: {round(cruzeiro.latency*1000)}ms")
@@ -52,7 +56,8 @@ async def about(ctx):
 
 @cruzeiro.command()
 async def botcode(ctx):
-    await ctx.send(f"https://github.com/oOperaho/Cruzeiro")
+    await ctx.send(f"Repositório: https://github.com/oOperaho/Cruzeiro")
 
 
+# Running bot
 cruzeiro.run('lmao token')
