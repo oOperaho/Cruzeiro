@@ -2,7 +2,7 @@
 
 This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now.
 
-- [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)\
+- [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## How i did 
