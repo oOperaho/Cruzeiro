@@ -1,4 +1,4 @@
-# Simple start
+# Simple start, import packages and connect to Discord API
 
 import discord
 from discord.ext import commands
