@@ -2,20 +2,20 @@
 
 This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now.
 
-[Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)\
-[Heroku](https://devcenter.heroku.com/categories/python-support)
+- [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
+- [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## How i did 
 
 The bot is now running on Heroku servers, using only free features. There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
 I'll list some things i almost miss while read the documentations, on the first attempt to host this bot.
 
-### → Create Python reference -
+### → Create Python reference 
 
   * Heroku won't able the buildpacks if they don't be referred. I used **heroku buildpacks:set heroku/python** to set it.
   * This can be configurated at the **heroku create** command, creating the app and setting the buildpack inside.
 
-### → Set Procfile and requirements -
+### → Set Procfile and requirements 
 
   * These two files must be created at the same directory as the *.py* script. The _Procfile_ can't have a extension, and will contain the _web/worker_ dynos to 
   actually connect the app to Heroku.
@@ -30,7 +30,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
-### → Switch branches and deploy - 
+### → Switch branches and deploy 
  
   * Yes, i was in the remote branch master, which was used to be the default branch for Heroku. However, i had to change it to the **main** branch, using the
   command line **git checkout main**. After doing this, the code was able to actually being pushed.
@@ -39,7 +39,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   the line reference **"web: gunicorn main:app"** of the Procfile, replacing by the **python main.py** that was mentioned before. I've added the **worker** dyno, 
   edited some lines of the code and pushed it. The bot is on, working fine.
  
-  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+  ![Online](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 I'll update every change or issue on the application, this .readme just tells the things i did to solve some problems. If there's something that can be changed or 
 solved in a better way, i can edit the text anytime, so it can be helpful to others.  
@@ -49,21 +49,21 @@ solved in a better way, i can edit the text anytime, so it can be helpful to oth
 
 # Cruzeiro
 
-Esse é o mesmo bot antigo, rodando no servidor do Discord da CSUL, mas eu mudei o código. Está melhor agora.
+Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord da CSUL, mas eu mudei o código. Está melhor agora.
 
-[Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)\
-[Heroku](https://devcenter.heroku.com/categories/python-support)
+- [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
+- [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## Como eu fiz
 
 O bot está rodando agora nos servidores da Heroku, usando só recursos gratuitos. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
 
-### → Criar referência do Python -
+### → Criar referência do Python 
 
   * A Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei o **heroku buildpacks:set heroku/python** pra setar isso.
   * Isso pode ser configurado no comando **heroku create**, criando o aplicativo com o buildpack já inserido.
 
-### → Configurar Procfile e os requirements -
+### → Configurar Procfile e os requirements 
 
   * Esses dois arquivos precisam ser criados no mesmo diretório do arquivo *.py*. O _Procfile_ não pode ter extensão, e vai receber os dynos _web/worker_ pra conectar
   a aplicação com a Heroku.
@@ -78,7 +78,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
-### → Trocar branches e fazer o deploy - 
+### → Trocar branches e fazer o deploy  
  
   * Sim, eu estava no branch master, que era o branch padrão da Heroku. Entretanto, eu precisei mudar para o **main** branch com o comando **git checkout main**. 
   Depois de fazer isso, eu pude executar o git push.
@@ -87,7 +87,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   servidor online, então eu precisei remover a linha **"web: gunicorn main:app"** no Procfile, alternando para **python main.py** que eu havia mencionado antes. 
   Eu adicionei o dyno **worker**, editei algumas linhas no código principal e executei o git push. O bot está online, funcionando perfeitamente.
  
-  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+  ![Online](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 Eu vou atualizar toda mudança ou problema da aplicação, esse readme só conta os métodos que eu usei pra resolver alguns problemas. Se tem algo que pode ser mudado
 ou resolvido de uma maneira melhor, eu posso editar esse texto a qualquer hora, para ser útil para outras pessoas.
