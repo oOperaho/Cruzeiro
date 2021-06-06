@@ -1,9 +1,10 @@
-# Simple start, import packages and connect to Discord API
+# Import packages -
 
 import discord
 from discord.ext import commands
 import emoji
 
+# Connect to Discord API and set use of intents -
 intents = discord.Intents.default()
 intents.members = True
 cruzeiro = commands.Bot(command_prefix='.', intents=intents)
