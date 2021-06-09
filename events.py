@@ -1,24 +1,24 @@
 import discord
 from discord.ext import commands
 import emoji
-import main
+import cruzeiro
 
-main.setting()
+cruzeiro.setting()
 
-cruzeiro = commands.Bot(command_prefix=".")
+bot = commands.Bot(command_prefix=".")
 
 
 # Event Decorators -
 def login():
-    @cruzeiro.event
+    @bot.event
     async def on_ready():
-        print(f"Logged as: {cruzeiro.user};")
+        print(f"Logged as: {bot.user};")
         stats = discord.Game(".about")
-        await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=stats)
+        await bot.change_presence(status=discord.Status.do_not_disturb, activity=stats)
 
 
 def newmember():
-    @cruzeiro.event
+    @bot.event
     async def on_member_join(member):
         print(f"{member.name} has joined the server.")
         await member.send(f"Bem-vindo(a) ao servidor da Cruzeiro do sul, {member.name}!"
@@ -27,17 +27,17 @@ def newmember():
 
 
 def memberleft():
-    @cruzeiro.event
+    @bot.event
     async def on_member_remove(member):
         print(f"{member.name} just left the server.")
 
 
 def newmsg():
-    @cruzeiro.event
+    @bot.event
     async def on_message(ctx):
         ctx.content.lower()
-        if ctx.author == cruzeiro.user:
+        if ctx.author == bot.user:
             return
         if "cruzeiro" in ctx.content:
             await ctx.channel.send(emoji.emojize(":eye:"))
-        await cruzeiro.process_commands(ctx)
+        await bot.process_commands(ctx)
