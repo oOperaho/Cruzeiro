@@ -33,4 +33,4 @@ botcommands.botcodecmd()
 
 
 # Running bot
-cruzeiro.run("Njk2NzQyOTgyODk1Nzk2Mjg1.XotKdw.UPdWnzDmYltTRerENeVZfsI8VYU")
+cruzeiro.run("token")
