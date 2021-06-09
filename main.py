@@ -6,6 +6,7 @@ import events
 import botcommands
 
 
+# Function used to call intents, also in other files
 def setting():
     intents = discord.Intents.default()
     intents.members = True
@@ -14,6 +15,7 @@ def setting():
 cruzeiro = commands.Bot(command_prefix=".",)
 
 
+# Calling event Decorators from events.pu
 events.login()
 
 events.newmember()
@@ -22,6 +24,7 @@ events.memberleft()
 
 events.newmsg()
 
+# Calling command Decorators from botcommands.py
 botcommands.pingcmd()
 
 botcommands.aboutcmd()
