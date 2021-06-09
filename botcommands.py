@@ -1,7 +1,7 @@
 from discord.ext import commands
-import cruzeiro
+import cruzeiro21
 
-cruzeiro.setting()
+cruzeiro21.setting()
 
 bot = commands.Bot(command_prefix=".")
 
