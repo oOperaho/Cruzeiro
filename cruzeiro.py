@@ -12,7 +12,7 @@ def setting():
     intents.members = True
 
 
-cruzeiro = commands.Bot(command_prefix=".",)
+cruzeiro = commands.Bot(command_prefix=".")
 
 
 # Calling event Decorators from events.pu
