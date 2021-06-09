@@ -7,9 +7,8 @@ import botcommands
 
 
 # Function used to call intents, also in other files
-def setting():
-    intents = discord.Intents.default()
-    intents.members = True
+intents = discord.Intents.default()
+intents.members = True
 
 
 bot = commands.Bot(command_prefix=".")

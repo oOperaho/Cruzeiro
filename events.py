@@ -1,9 +1,10 @@
 import discord
 from discord.ext import commands
 import emoji
-import cruzeiro21
 
-cruzeiro21.setting()
+
+intents = discord.Intents.default()
+intents.members = True
 
 bot = commands.Bot(command_prefix=".")
 
