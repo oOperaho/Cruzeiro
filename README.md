@@ -25,8 +25,8 @@ I'll list some things i almost miss while read the documentations, on the first 
   
   * The _requirements.txt_ has to contain all the packages/versions that are being used on the application. I also forgot to put a "discord==1.0.1" line to invoke the
   main discord package.
-  * On Heroku CLI, i had to make a **heroku ps:scale web=1 worker=1** after update the Procfile. This line sets the amount of dynos that will be used. Also, i had
-  to enable the options of web and worker (after commit) on Heroku dashboard resources page.
+  * On Heroku CLI, i had to make a **heroku ps:scale web=1 worker=1** after update the Procfile. This line sets the amount of dynos that the application will use. 
+  Also, i had to enable the options of web and worker (after commit) on Heroku dashboard resources page.
   
   ![Heroku Resources](https://user-images.githubusercontent.com/61850743/120261954-58afb280-c26f-11eb-83aa-506cdfd54591.png)
 
