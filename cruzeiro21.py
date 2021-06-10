@@ -11,7 +11,7 @@ intents = discord.Intents.default()
 intents.members = True
 
 
-bot = commands.Bot(command_prefix=".")
+bot = commands.Bot(command_prefix='.')
 
 
 # Calling event Decorators from events.pu
@@ -32,4 +32,4 @@ botcommands.botcodecmd()
 
 
 # Running bot
-bot.run("token")
+bot.run('token')
