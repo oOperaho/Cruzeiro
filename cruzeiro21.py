@@ -1,3 +1,5 @@
+# → Import packages
+
 import discord
 from discord.ext import commands
 import emoji
@@ -7,6 +9,7 @@ intents.members = True
 cruzeiro = commands.Bot(command_prefix='.', intents=intents)
 
 
+# → Set event Decorators
 @cruzeiro.event
 async def on_ready():
     print(f"Logged as: {cruzeiro.user};")
@@ -37,6 +40,7 @@ async def on_message(ctx):
     await cruzeiro.process_commands(ctx)
 
 
+# → Set command Decorators
 @cruzeiro.command()
 async def ping(ctx):
     await ctx.send(f"Ping: {round(cruzeiro.latency*1000)}ms")
