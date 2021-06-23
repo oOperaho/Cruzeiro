@@ -2,11 +2,13 @@ import discord
 from discord.ext import commands
 import emoji
 
+# Sets the use of intents, and connects to DiscordAPI
 intents = discord.Intents.default()
 intents.members = True
 cruzeiro = commands.Bot(command_prefix='.', intents=intents)
 
 
+# Sets and prints the status of the bot
 @cruzeiro.event
 async def on_ready():
     print(f"Logged as: {cruzeiro.user};")
@@ -14,6 +16,7 @@ async def on_ready():
     await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=stats)
 
 
+# Prints on log the name of the member who joined, and sends a welcome message on dm
 @cruzeiro.event
 async def on_member_join(member):
     print(f"{member.name} has joined the server.")
@@ -22,11 +25,13 @@ async def on_member_join(member):
                       f"https://discord.com/channels/605585174209495060/685884303057485849/744748856507498527")
 
 
+# Prints on log the name of the member who left
 @cruzeiro.event
 async def on_member_remove(member):
     print(f"{member.name} just left the server.")
 
 
+# If the message have "cruzeiro" on content, it'll reply with a emote
 @cruzeiro.event
 async def on_message(ctx):
     ctx.content.lower()
@@ -37,11 +42,13 @@ async def on_message(ctx):
     await cruzeiro.process_commands(ctx)
 
 
+# Replies the current ping of the bot
 @cruzeiro.command()
 async def ping(ctx):
     await ctx.send(f"Ping: {round(cruzeiro.latency*1000)}ms")
 
 
+# Replies some rules and stuff
 @cruzeiro.command()
 async def about(ctx):
     await ctx.send(f"Regras do servidor → "
@@ -50,6 +57,7 @@ async def about(ctx):
                    f"https://discord.com/channels/605585174209495060/685884303057485849/744748856507498527")
 
 
+# Replies with the link of this repo
 @cruzeiro.command()
 async def botcode(ctx):
     await ctx.send(f"Repositório: https://github.com/oOperaho/Cruzeiro")
