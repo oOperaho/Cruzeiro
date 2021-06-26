@@ -69,7 +69,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   a aplicação com a Heroku.
   * Eu instalei o _gunicorn_ pra usar os dynos, mas no final eu não precisei dele. Só passei o parâmetro **python** para rodá-los.
   
-  ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
+  ![Procfile setting](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
   * O _requirements.txt_ precisa ter todos os packages (comk as versões) que estão sendo usadas no app. Eu também esqueci de passar o parâmetro "discord==1.0.1" para
   chamar o pacote principal do Discord.
