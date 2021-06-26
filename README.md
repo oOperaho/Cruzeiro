@@ -39,7 +39,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   the line reference **"web: gunicorn main:app"** of the Procfile, replacing by the **python main.py** that was mentioned before. I've added the **worker** dyno, 
   edited some lines of the code and pushed it. The bot is on, working fine.
  
-  ![Online](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 I'll update every change or issue on the application, this .readme just tells the things i did to solve some problems. If there's something that can be changed or 
 solved in a better way, i can edit the text anytime, so it can be helpful to others.  
