@@ -21,7 +21,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   actually connect the app to Heroku.
   * I downloaded _gunicorn_ to use these dynos properly, but i don't really needed it at all. All i had to do was run the dynos with the **python** parameter. 
   
-  ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
+  ![Procfile setting](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
   * The _requirements.txt_ has to contain all the packages/versions that are being used on the application. I also forgot to put a "discord==1.0.1" line to invoke the
   main discord package.
