@@ -1,13 +1,14 @@
 # Cruzeiro
 
-This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's way better now.
+This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now.
 
 - [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## How i did 
 
-The bot is now running on Heroku servers, using only free features. There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
+I've heard that is impossible to host a application in Heroku servers using only free features (without losing perfomance). This is not true. The bot is now running there, and i didn't pay any aditional services. 
+There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
 I'll list some things i almost miss while read the documentations, on the first attempt to host this bot.
 
 ### → Create Python reference 
@@ -56,7 +57,9 @@ Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord
 
 ## Como eu fiz
 
-O bot está rodando agora nos servidores da Heroku, usando só recursos gratuitos. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
+Eu já ouvi que é impossível hospedar uma aplicação nos servidores da Heroku usando só os recursos gratuitos (sem perder algum benefício). Isso não é verdade. O bot está rodando agora lá, e eu não paguei 
+por nenhum serviço adicional. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar 
+atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
 
 ### → Criar referência do Python 
 
@@ -90,6 +93,6 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 Eu vou atualizar toda mudança ou problema da aplicação, esse readme só conta os métodos que eu usei pra resolver alguns problemas. Se tem algo que pode ser mudado
-ou resolvido de uma maneira melhor, eu posso editar esse texto a qualquer hora, pra ser útil para outras pessoas.
+ou resolvido de uma maneira melhor, eu posso editar esse texto a qualquer hora, para ser útil para outras pessoas.
 
 </details>
