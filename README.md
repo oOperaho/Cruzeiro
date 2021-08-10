@@ -58,7 +58,8 @@ Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord
 ## Como eu fiz
 
 Eu já ouvi que é impossível hospedar uma aplicação nos servidores da Heroku usando só os recursos gratuitos (sem perder algum benefício). Isso não é verdade. O bot está rodando agora lá, e eu não paguei 
-por nenhum serviço adicional. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar 
+por nenhum serviço adicional. 
+Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar 
 atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
 
 ### → Criar referência do Python 
