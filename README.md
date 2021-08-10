@@ -63,7 +63,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   * A Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei o **heroku buildpacks:set heroku/python** pra setar isso.
   * Isso pode ser configurado no comando **heroku create**, criando o aplicativo com o buildpack já inserido.
 
-### → Configurar Procfile e os requirements 
+### → Configurar Procfile e requirements 
 
   * Esses dois arquivos precisam ser criados no mesmo diretório do arquivo *.py*. O _Procfile_ não pode ter extensão, e vai receber os dynos _web/worker_ pra conectar
   a aplicação com a Heroku.
