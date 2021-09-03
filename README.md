@@ -1,6 +1,6 @@
 # Cruzeiro
 
-This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now.
+This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now. Host the app was more difficult than actually write the code.
 
 - [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
@@ -50,7 +50,7 @@ solved in a better way, i can edit the text anytime, so it can be helpful to oth
 
 # Cruzeiro
 
-Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord da Cruzeiro do Sul, mas eu mudei o código. Está melhor agora.
+Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord da Cruzeiro do Sul, mas eu mudei o código. Está melhor agora. Hospedar o bot foi mais difícil do que de fato escrever o código.
 
 - [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
