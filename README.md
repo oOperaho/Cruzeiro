@@ -1,13 +1,14 @@
 # Cruzeiro
 
-This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now.
+This is the same old bot running on the Discord Server of CSUL, but i've changed the code. It's better now. Host the app was more difficult than actually write the code.
 
 - [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## How i did 
 
-The bot is now running on Heroku servers, using only free features. There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
+I've heard that is impossible to host a application in Heroku servers using only free features (without losing perfomance). This is not true. The bot is now running there, and i didn't pay any aditional services. 
+There are some new commands on Heroku CLI that can be a problem if you don't pay attention.
 I'll list some things i almost miss while read the documentations, on the first attempt to host this bot.
 
 ### → Create Python reference 
@@ -21,7 +22,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   actually connect the app to Heroku.
   * I downloaded _gunicorn_ to use these dynos properly, but i don't really needed it at all. All i had to do was run the dynos with the **python** parameter. 
   
-  ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
+  ![Procfile setting](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
   * The _requirements.txt_ has to contain all the packages/versions that are being used on the application. I also forgot to put a "discord==1.0.1" line to invoke the
   main discord package.
@@ -39,7 +40,7 @@ I'll list some things i almost miss while read the documentations, on the first 
   the line reference **"web: gunicorn main:app"** of the Procfile, replacing by the **python main.py** that was mentioned before. I've added the **worker** dyno, 
   edited some lines of the code and pushed it. The bot is on, working fine.
  
-  ![Online](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 I'll update every change or issue on the application, this .readme just tells the things i did to solve some problems. If there's something that can be changed or 
 solved in a better way, i can edit the text anytime, so it can be helpful to others.  
@@ -49,27 +50,30 @@ solved in a better way, i can edit the text anytime, so it can be helpful to oth
 
 # Cruzeiro
 
-Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord da CSUL, mas eu mudei o código. Está melhor agora.
+Esse é o mesmo bot antigo que foi escrito em C#, rodando no servidor do Discord da Cruzeiro do Sul, mas eu mudei o código. Está melhor agora. Hospedar o bot foi mais difícil do que de fato escrever o código.
 
 - [Discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
 - [Heroku](https://devcenter.heroku.com/categories/python-support)
 
 ## Como eu fiz
 
-O bot está rodando agora nos servidores da Heroku, usando só recursos gratuitos. Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
+Eu já ouvi que é impossível hospedar uma aplicação nos servidores da Heroku usando só os recursos gratuitos (sem perder algum benefício). Isso não é verdade. O bot está rodando agora lá, e eu não paguei 
+por nenhum serviço adicional. 
+Tem alguns novos comandos na CLI da Heroku que podem causar problemas se você não prestar 
+atenção. Eu vou listar aqui algumas coisas que eu quase esqueci enquanto lia as documentações, na primeira vez que tentei hospedar o bot.
 
 ### → Criar referência do Python 
 
   * A Heroku não vai habilitar os buildpacks se eles não forem referenciados. Eu usei o **heroku buildpacks:set heroku/python** pra setar isso.
   * Isso pode ser configurado no comando **heroku create**, criando o aplicativo com o buildpack já inserido.
 
-### → Configurar Procfile e os requirements 
+### → Configurar Procfile e requirements 
 
   * Esses dois arquivos precisam ser criados no mesmo diretório do arquivo *.py*. O _Procfile_ não pode ter extensão, e vai receber os dynos _web/worker_ pra conectar
   a aplicação com a Heroku.
   * Eu instalei o _gunicorn_ pra usar os dynos, mas no final eu não precisei dele. Só passei o parâmetro **python** para rodá-los.
   
-  ![Procfile](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
+  ![Procfile setting](https://user-images.githubusercontent.com/61850743/120256302-35333a80-c264-11eb-9d37-3a3027a4016f.png)
   
   * O _requirements.txt_ precisa ter todos os packages (comk as versões) que estão sendo usadas no app. Eu também esqueci de passar o parâmetro "discord==1.0.1" para
   chamar o pacote principal do Discord.
@@ -87,7 +91,7 @@ O bot está rodando agora nos servidores da Heroku, usando só recursos gratuito
   servidor online, então eu precisei remover a linha **"web: gunicorn main:app"** no Procfile, alternando para **python main.py** que eu havia mencionado antes. 
   Eu adicionei o dyno **worker**, editei algumas linhas no código principal e executei o git push. O bot está online, funcionando perfeitamente.
  
-  ![Online](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
+  ![Bot](https://user-images.githubusercontent.com/61850743/120260002-5f3c2b00-c26b-11eb-9ee6-22d976f88bb7.png)
   
 Eu vou atualizar toda mudança ou problema da aplicação, esse readme só conta os métodos que eu usei pra resolver alguns problemas. Se tem algo que pode ser mudado
 ou resolvido de uma maneira melhor, eu posso editar esse texto a qualquer hora, para ser útil para outras pessoas.
