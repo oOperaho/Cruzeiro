@@ -5,7 +5,7 @@ import emoji
 # Sets the use of intents, and connects to DiscordAPI
 intents = discord.Intents.default()
 intents.members = True
-cruzeiro = commands.Bot(command_prefix='.', intents=intents)
+cruzeiro = commands.Bot(command_prefix=".", intents=intents)
 
 
 # Sets and prints the status of the bot
