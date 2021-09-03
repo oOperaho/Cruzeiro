@@ -32,7 +32,7 @@ async def on_member_remove(member):
     print(f"{member.name} just left the server.")
 
 
-# If the message have "cruzeiro" on content, it'll reply with a emote
+# If the message has "cruzeiro" on content, it'll reply with a emote
 @cruzeiro.event
 async def on_message(ctx):
     ctx.content.lower()
