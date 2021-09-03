@@ -26,7 +26,7 @@ async def on_member_join(member):
                       f"https://discord.com/channels/605585174209495060/685884303057485849/744748856507498527")
 
 
-# Prints on log the name of the member who left
+# Prints on console the name of the member who left
 @cruzeiro.event
 async def on_member_remove(member):
     print(f"{member.name} just left the server.")
