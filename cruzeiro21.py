@@ -17,7 +17,7 @@ async def on_ready():
     await cruzeiro.change_presence(status=discord.Status.do_not_disturb, activity=stats)
 
 
-# Prints on log the name of the member who joined, and sends a welcome message on dm
+# Prints on log the name of the member who joined, and sends a welcome message o dm
 @cruzeiro.event
 async def on_member_join(member):
     print(f"{member.name} has joined the server.")
