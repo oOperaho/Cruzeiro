@@ -13,7 +13,7 @@ I'll list some things i almost miss while read the documentations, on the first 
 
 ### → Create Python reference 
 
-  * Heroku won't able the buildpacks if they aren't. I used **heroku buildpacks:set heroku/python** to set it.
+  * Heroku won't be able to use the buildpacks if they aren't referred. I used **heroku buildpacks:set heroku/python** to set it.
   * This can be configurated at the **heroku create** command, creating the app and setting the buildpack inside.
 
 ### → Set Procfile and requirements 
